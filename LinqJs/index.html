@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LinqJs 分页 Demo</title>
+    <!-- 引入 bootstrap 样式 CDN -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="searchContent">
+                    <span class="input-group-btn">
+                         <button class="btn btn-success" type="button" onclick="search()">Search</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <table id="table" class="table">
+            <thead>
+            <th>序号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            </thead>
+            <tbody id="peopleData"></tbody>
+        </table>
+        <ul class="pagination pull-right" id="pagination">
+
+        </ul>
+    </div>
+
+    <script src="js/linq.min.js"></script>
+    <script type="text/javascript" src="js/lingJsDemo.js"></script>
+</body>
+</html>
